@@ -81,20 +81,5 @@ public class Transaction {
 	public void setTransClosingBalance(Double transClosingBalance) {
 		this.transClosingBalance = transClosingBalance;
 	}
-	
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Transaction transaction = (Transaction) o;
-        return transAccountId==transaction.transAccountId;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(transAccountId);
-    }
-	
-	
+  
 }

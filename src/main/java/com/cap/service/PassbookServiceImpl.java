@@ -14,7 +14,7 @@ public class PassbookServiceImpl implements IPassbookService{
 	@Autowired
 	private IPassbookDao dao;
 	@Override
-	public List<Transaction> getAllTransactions(String transAccountId) {
+	public List<Transaction> accountSummary(String transAccountId) {
         
 	   Optional<Transaction> optional=dao.findById(transAccountId);
 	   if(optional.isPresent())
