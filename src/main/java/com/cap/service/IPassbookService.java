@@ -6,7 +6,7 @@ import com.cap.entities.Transaction;
 public interface IPassbookService {
 
   List<Transaction> getAllTransactions(String transAccountId);
-  boolean updatePassbook(String transAccountId);
+  //boolean updatePassbook(String transAccountId);
  
 	
 }

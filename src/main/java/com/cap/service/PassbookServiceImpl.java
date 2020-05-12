@@ -25,7 +25,7 @@ public class PassbookServiceImpl implements IPassbookService{
 		}
 		else
 		{
-			throw new AccountNotFoundException("no account exist");
+			throw new AccountNotFoundException("account not exist");
 		}
 		
 	}

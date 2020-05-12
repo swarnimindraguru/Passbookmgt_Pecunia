@@ -7,13 +7,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-//@Entity
-//@Table(name="accounts")
+@Entity
+@Table(name="accounts")
 public class AccountManagement {
 
-	//@Id
-	//@GeneratedValue
-	private String accountId;
+@Id
+@GeneratedValue
+private String accountId;
 	
 	
 	public String getAccountId() {
@@ -73,18 +73,5 @@ public class AccountManagement {
 	public void setLastUpdated(Date lastUpdated) {
 		this.lastUpdated = lastUpdated;
 	}
-	
-	@Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        AccountManagement account = (AccountManagement) o;
-        return accountId == account.accountId;
-    }
-	
-	 @Override
-	    public int hashCode() {
-	        return Objects.hash(accountId);
-	    }
 	
 }
